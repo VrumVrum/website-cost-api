@@ -1,0 +1,28 @@
+openapi: 3.0.3
+info:
+  title: Website Cost API
+  version: "1.0.0"
+  description: >
+    Free, no-signup JSON API for website and software project cost data —
+    platform, geographic, pricing-tier and urgency multipliers calibrated on
+    600+ project quotes and public rate benchmarks. Data is CC-BY 4.0.
+  contact:
+    name: Project Cost Estimator
+    url: https://projectcostestimator.com
+  license:
+    name: CC-BY 4.0 (data)
+    url: https://creativecommons.org/licenses/by/4.0/
+servers:
+  - url: https://projectcostestimator.com
+paths:
+  /api/cost-data:
+    get:
+      summary: Get the full website/software cost dataset (multipliers + methodology)
+      operationId: getCostData
+      responses:
+        "200":
+          description: A schema.org Dataset with the multiplier set.
+          content:
+            application/json:
+              schema:
+                type: object
