@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Website Cost Calculator — Free Embed Demo | website-cost-api</title>
+<meta name="description" content="Live demo of the free, no-signup website cost calculator widget from Project Cost Estimator. Copy one script tag to embed it on your own site.">
+<link rel="canonical" href="https://vrumvrum.github.io/website-cost-api/">
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: #0b0e14;
+    color: #e6e9ef;
+    line-height: 1.55;
+  }
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 20px 80px;
+  }
+  h1 { font-size: 1.6rem; margin-bottom: 0.25rem; }
+  p.lede { color: #a7b0c0; margin-top: 0; }
+  .badges img { margin-right: 6px; }
+  .card {
+    background: #131722;
+    border: 1px solid #232838;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 28px 0;
+  }
+  .widget-slot { min-height: 420px; }
+  code, pre {
+    background: #0b0e14;
+    border: 1px solid #232838;
+    border-radius: 8px;
+    padding: 2px 6px;
+    font-size: 0.85em;
+  }
+  pre { padding: 14px; overflow-x: auto; }
+  a { color: #7dd3fc; }
+  footer { color: #6b7280; font-size: 0.85rem; margin-top: 40px; }
+  ul.links { padding-left: 1.1rem; }
+</style>
+</head>
+<body>
+<main>
+  <p class="badges">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-blue.svg">
+    <img alt="Data: CC BY 4.0" src="https://img.shields.io/badge/Data-CC--BY--4.0-green.svg">
+    <img alt="No signup" src="https://img.shields.io/badge/API-free%20%C2%B7%20no%20signup-brightgreen.svg">
+  </p>
+
+  <h1>Website Cost Calculator — free embed demo</h1>
+  <p class="lede">
+    This is a live, working copy of the free calculator widget from
+    <a href="https://projectcostestimator.com" rel="noopener">Project Cost Estimator</a>,
+    embedded on GitHub Pages with the exact two lines a visitor would paste into their own site.
+    No signup, no API key, no tracking added by this demo.
+  </p>
+
+  <div class="card">
+    <h2 style="margin-top:0;font-size:1.05rem;">Live widget</h2>
+    <div class="widget-slot" data-pce-widget="general"></div>
+    <script async src="https://projectcostestimator.com/embed.js"></script>
+  </div>
+
+  <div class="card">
+    <h2 style="margin-top:0;font-size:1.05rem;">Embed it yourself</h2>
+    <p>Paste this where you want the calculator, then load the script once per page:</p>
+<pre>&lt;div data-pce-widget="general"&gt;&lt;/div&gt;
+&lt;script async src="https://projectcostestimator.com/embed.js"&gt;&lt;/script&gt;</pre>
+    <p>
+      13 niche presets are available (restaurant, law firm, e-commerce, real estate, SaaS, and more) —
+      see the <a href="https://projectcostestimator.com/embed" rel="noopener">full embed picker</a>
+      for the complete list and a copy-paste code generator.
+    </p>
+  </div>
+
+  <h2 style="font-size:1.05rem;">This repository</h2>
+  <p>
+    <code>website-cost-api</code> documents the free JSON API behind this widget —
+    the platform, geographic, tier and urgency multipliers, calibrated on 600+ real project quotes,
+    licensed <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">CC BY 4.0</a>.
+  </p>
+  <ul class="links">
+    <li>🧮 Full calculator: <a href="https://projectcostestimator.com/calculator" rel="noopener">projectcostestimator.com/calculator</a></li>
+    <li>📚 API docs: <a href="https://projectcostestimator.com/api-docs" rel="noopener">projectcostestimator.com/api-docs</a></li>
+    <li>📊 Cost Index dataset: <a href="https://projectcostestimator.com/cost-index" rel="noopener">projectcostestimator.com/cost-index</a></li>
+    <li>💻 Source / README: <a href="https://github.com/VrumVrum/website-cost-api" rel="noopener">github.com/VrumVrum/website-cost-api</a></li>
+  </ul>
+
+  <footer>
+    Built and maintained by Florin Florea · <a href="https://projectcostestimator.com" rel="noopener">Project Cost Estimator</a>.
+    Data refreshed as market rates move.
+  </footer>
+</main>
+</body>
+</html>
